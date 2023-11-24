@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  redis:
+    image: redis:6.2
+    container_name: redis-lovetank
+    hostname: redis
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    command: --port 6381
+    ports:
+      - '6381:6381'
+    expose:
+      - '6381'

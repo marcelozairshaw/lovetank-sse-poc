@@ -4,7 +4,8 @@
   "description": "- Node v20",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start:first": "PORT=5000 nodemon",
+    "start:second": "PORT=5001 nodemon"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
+    "redis": "^4.6.11",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   }

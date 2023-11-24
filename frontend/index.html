@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSE</title>
+</head>
+<body>
+
+  <div>
+    <h3>Select Server (<span id="server-port"></span> selected)</h3>
+    <button onclick="updateServer(5000)">Backend 5000</button>
+    <button onclick="updateServer(5001)">Backend 5001</button>
+  </div>
+
+  <div>
+    <h3>Update Location</h3>
+    <form id="location-form">
+      <input name="latitude" placeholder="Latitude" />
+      <input name="longitude" placeholder="Longitude" />
+      <br /> <br />
+      <button>Save</button>
+    </form>
+  </div>
+
+  <br />
+  <br />
+
+  <div>
+    <h3>Distances updated historial</h3>
+    <ul id="distance">
+    </ul>
+  </div>
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>
